@@ -1,0 +1,5 @@
+#!/bin/bash
+arr=(4 7 2 9 5); max=${arr[0]}
+for i in "${arr[@]}"; do [ $i -gt $max ] && max=$i; done
+echo "Max: $max"
+

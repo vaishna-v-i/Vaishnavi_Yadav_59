@@ -1,0 +1,7 @@
+#!/bin/bash
+read -p "Enter a character: " ch
+case $ch in
+  [aeiouAEIOU]) echo "Vowel" ;;
+  *) echo "Not a vowel" ;;
+esac
+

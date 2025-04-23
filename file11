@@ -1,0 +1,5 @@
+#!/bin/bash
+a=20; b=30
+while [ $b -ne 0 ]; do t=$b; b=$((a % b)); a=$t; done
+echo "GCD: $a"
+

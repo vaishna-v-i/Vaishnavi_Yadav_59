@@ -1,0 +1,3 @@
+read -p "File 1: " f1
+read -p "File 2: " f2
+diff "$f1" "$f2" > /dev/null && echo "Files are same." || echo "Files are different."

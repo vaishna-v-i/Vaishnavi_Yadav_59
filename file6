@@ -1,0 +1,4 @@
+#!/bin/bash
+email="test@example.com"
+[[ $email =~ ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$ ]] && echo "Valid Email" || echo "Invalid Email"
+

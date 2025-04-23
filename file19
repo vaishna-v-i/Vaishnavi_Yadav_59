@@ -1,0 +1,7 @@
+read -sp "Enter password: " password
+echo
+if [[ ${#password} -ge 8 && "$password" =~ [A-Z] && "$password" =~ [a-z] && "$password" =~ [0-9] ]]; then
+  echo "Strong password"
+else
+  echo "Weak password"
+fi

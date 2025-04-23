@@ -1,0 +1,6 @@
+#!/bin/bash
+read -p "Enter range (start end): " s e
+for ((i=s; i<=e; i++)); do
+  [ $((i % 2)) -eq 0 ] && echo "$i"
+done
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+read -p "Enter lower and upper limit: " l u
+for ((n=l; n<=u; n++)); do
+  p=1
+  for ((i=2; i<n; i++)); do [ $((n % i)) -eq 0 ] && p=0 && break; done
+  [ $p -eq 1 ] && echo "$n"
+done
+

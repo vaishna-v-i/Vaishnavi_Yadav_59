@@ -1,0 +1,5 @@
+#!/bin/bash
+str="Ubuntu on VMware"
+count=$(echo $str | wc -w)
+echo "Word count: $count"
+

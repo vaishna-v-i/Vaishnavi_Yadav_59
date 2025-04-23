@@ -1,0 +1,6 @@
+nums=(-1 2 -3 4 -5)
+pos=0; neg=0
+for i in "${nums[@]}"; do
+  ((i > 0)) && ((pos+=i)) || ((neg+=i))
+done
+echo "Positive sum: $pos, Negative sum: $neg"

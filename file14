@@ -1,0 +1,5 @@
+#!/bin/bash
+arr=(4 7 2 9 5); min=${arr[0]}
+for i in "${arr[@]}"; do [ $i -lt $min ] && min=$i; done
+echo "Min: $min"
+

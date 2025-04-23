@@ -1,0 +1,13 @@
+read -p "Enter number: " n
+prime=1
+for ((i=2;i<n;i++)); do
+  if ((n%i==0)); then
+    prime=0
+    break
+  fi
+done
+if ((prime==1 && n > 1)); then
+  echo "$n is a prime number."
+else
+  echo "$n is not a prime number."
+fi

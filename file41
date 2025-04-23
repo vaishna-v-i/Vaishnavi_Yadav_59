@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p "Enter a file name: " file
+if [ -d "$file" ]; then
+  echo "Directory"
+elif [ -f "$file" ]; then
+  echo "Regular File"
+else
+  echo "Other or Not Found"
+fi
+

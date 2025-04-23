@@ -1,0 +1,8 @@
+#!/bin/bash
+file="sample.txt"
+if [ -f "$file" ]; then
+  lines=$(wc -l < "$file")
+  echo "$file has $lines lines"
+else
+  echo "$file not found"
+fi

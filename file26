@@ -1,0 +1,9 @@
+read -p "Start: " start
+read -p "End: " end
+for ((i=start; i<=end; i++)); do
+  prime=1
+  for ((j=2; j<i; j++)); do
+    if ((i % j == 0)); then prime=0; break; fi
+  done
+  ((prime==1 && i>1)) && echo $i
+done

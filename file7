@@ -1,0 +1,5 @@
+#!/bin/bash
+str="Ubuntu"
+rev=$(echo $str | rev)
+echo "Reversed: $rev"
+

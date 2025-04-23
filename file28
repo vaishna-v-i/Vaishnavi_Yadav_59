@@ -1,0 +1,5 @@
+for f in *; do
+  new=$(echo $f | tr 'A-Z' 'a-z')
+  [ "$f" != "$new" ] && mv "$f" "$new"
+done
+

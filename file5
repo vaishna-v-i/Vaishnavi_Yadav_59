@@ -1,0 +1,5 @@
+#!/bin/bash
+arr=(1 2 4 5); idx=2; ele=3
+arr=("${arr[@]:0:$idx}" "$ele" "${arr[@]:$idx}")
+echo "After insert: ${arr[@]}"
+

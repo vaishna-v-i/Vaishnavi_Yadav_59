@@ -1,0 +1,9 @@
+#!/bin/bash
+num=18; sum=0; n=$num
+while [ $n -gt 0 ]; do sum=$((sum + n % 10)); n=$((n / 10)); done
+if [ $((num % sum)) -eq 0 ]; then
+  echo "$num is a Harshad number"
+else
+  echo "$num is not a Harshad number"
+fi
+

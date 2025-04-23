@@ -1,0 +1,6 @@
+#!/bin/bash
+a=4; b=6; m=$a; n=$b
+while [ $n -ne 0 ]; do t=$n; n=$((m % n)); m=$t; done
+lcm=$((a * b / m))
+echo "LCM: $lcm"
+

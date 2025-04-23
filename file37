@@ -1,0 +1,10 @@
+secret=$((RANDOM % 10 + 1))
+while true; do
+  read -p "Guess a number (1-10): " g
+  if ((g == secret)); then
+    echo "Correct!"
+    break
+  else
+    echo "Try again."
+  fi
+done

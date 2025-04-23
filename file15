@@ -1,0 +1,5 @@
+#!/bin/bash
+arr=(2 3 4 2 5 2); val=2; count=0
+for i in "${arr[@]}"; do [ $i -eq $val ] && count=$((count+1)); done
+echo "$val occurred $count times"
+

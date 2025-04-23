@@ -1,0 +1,6 @@
+read -p "Enter file: " f
+read -p "Find what: " old
+read -p "Replace with: " new
+sed -i "s/$old/$new/g" "$f"
+echo "Replaced all occurrences."
+

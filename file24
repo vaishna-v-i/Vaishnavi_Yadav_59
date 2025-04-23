@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "Enter filename: " fname
+read -p "Enter directory: " dir
+find "$dir" -type f -name "$fname"
